@@ -33,6 +33,7 @@
 }
 
 - (void) stopManager {
+    NSLog(@"Manager stopped..");
     _isEnabled = NO;
 }
 
@@ -41,9 +42,12 @@
 }
 
 -(void) showMessageInViewController:(UIViewController *)viewController {
-    NSBundle* frameworkBundle = [NSBundle bundleForClass:[self class]];
-    CustomView *csView = [[frameworkBundle loadNibNamed:@"CustomView" owner:self options:nil] firstObject];
-    [viewController.view addSubview:csView];
+    if (_isEnabled) {
+        NSBundle* frameworkBundle = [NSBundle bundleForClass:[self class]];
+        CustomView *csView = [[frameworkBundle loadNibNamed:@"CustomView" owner:self options:nil] firstObject];
+        csView.frame = CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height);
+        [viewController.view addSubview:csView];
+    }
 }
 
 @end

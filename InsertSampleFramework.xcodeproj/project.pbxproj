@@ -10,7 +10,7 @@
 		FFA595581B2727F700939F20 /* InsertSampleFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = FFA595571B2727F700939F20 /* InsertSampleFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FFA5955E1B2727F700939F20 /* InsertSampleFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFA595521B2727F700939F20 /* InsertSampleFramework.framework */; };
 		FFA595651B2727F700939F20 /* InsertSampleFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFA595641B2727F700939F20 /* InsertSampleFrameworkTests.m */; };
-		FFA595701B27286F00939F20 /* InsertManager.h in Headers */ = {isa = PBXBuildFile; fileRef = FFA5956E1B27286F00939F20 /* InsertManager.h */; };
+		FFA595701B27286F00939F20 /* InsertManager.h in Headers */ = {isa = PBXBuildFile; fileRef = FFA5956E1B27286F00939F20 /* InsertManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FFA595711B27286F00939F20 /* InsertManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FFA5956F1B27286F00939F20 /* InsertManager.m */; };
 		FFA595741B272A6200939F20 /* CustomView.h in Headers */ = {isa = PBXBuildFile; fileRef = FFA595721B272A6200939F20 /* CustomView.h */; };
 		FFA595751B272A6200939F20 /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = FFA595731B272A6200939F20 /* CustomView.m */; };
@@ -131,8 +131,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFA595581B2727F700939F20 /* InsertSampleFramework.h in Headers */,
-				FFA595741B272A6200939F20 /* CustomView.h in Headers */,
 				FFA595701B27286F00939F20 /* InsertManager.h in Headers */,
+				FFA595741B272A6200939F20 /* CustomView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,6 +426,7 @@
 				FFA5956A1B2727F700939F20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FFA5956B1B2727F700939F20 /* Build configuration list for PBXNativeTarget "InsertSampleFrameworkTests" */ = {
 			isa = XCConfigurationList;
@@ -434,6 +435,7 @@
 				FFA5956D1B2727F700939F20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
